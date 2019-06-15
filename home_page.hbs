@@ -1,0 +1,323 @@
+<script>
+  var _templateName = "homepage";
+</script>
+
+<section class="section hero">
+  <div class="hero-inner">
+    <h1>Take A Breath, We're Here to Help</h1>
+    <h3>Welcome to the I Drive Safely&reg; Help Center</h3>
+    {{search submit=true id="quick-search" instant=true class='search search-full' placeholder='How can we help you today?'}}
+  </div>
+</section>
+
+<div class="container">
+<section class="section knowledge-base">
+  <section class="categories blocks">
+    <section class="container">
+      <ul class="blocks-list">
+
+        {{#is settings.first_block_visibility 'show'}}
+        <li class="blocks-item custom">
+          <a href='{{settings.first_block_url}}' class="blocks-item-link" title="{{#is settings.first_block_title_dc 'NONE'}}{{settings.first_block_title}}{{else}}{{dc settings.first_block_title_dc}}{{/is}}">
+            {{#is settings.first_block_font_icon 'NONE'}}
+            <img src="{{settings.first_block_icon}}" alt="{{#is settings.first_block_title_dc 'NONE'}} {{settings.first_block_title}} {{else}} {{dc settings.first_block_title_dc}} {{/is}}"
+              class="block-icon" />
+            <img src="{{settings.first_block_hover_icon}}" alt="{{#is settings.first_block_title_dc 'NONE'}} {{settings.first_block_title}} {{else}} {{dc settings.first_block_title_dc}} {{/is}}"
+              class="block-hover-icon" /> {{else}}
+            <i class="{{settings.first_block_font_icon}}"></i>
+            {{/is}}
+
+            <h3 class="blocks-item-title">
+              {{#is settings.first_block_title_dc 'NONE'}} {{settings.first_block_title}} {{else}} {{dc
+              settings.first_block_title_dc}}
+              {{/is}}
+            </h3>
+
+            {{#isnt settings.first_block_description 'NONE'}}
+            <p class="blocks-item-description">
+              {{#is settings.first_block_description_dc 'NONE'}} {{settings.first_block_description}} {{else}} {{dc
+              settings.first_block_description_dc}}
+              {{/is}}
+            </p>
+            {{/isnt}}
+
+          </a>
+        </li>
+        {{/is}} {{#is settings.second_block_visibility 'show'}}
+        <li class="blocks-item custom">
+          <a href='{{settings.second_block_url}}' class="blocks-item-link" title="{{#is settings.second_block_title_dc 'NONE'}}{{settings.second_block_title}}{{else}}{{dc settings.second_block_title_dc}}{{/is}}">
+
+            {{#is settings.second_block_font_icon 'NONE'}}
+            <img src="{{settings.second_block_icon}}" alt="{{#is settings.second_block_title_dc 'NONE'}} {{settings.second_block_title}} {{else}} {{dc settings.second_block_title_dc}} {{/is}}"
+              class="block-icon" />
+            <img src="{{settings.second_block_hover_icon}}" alt="{{#is settings.second_block_title_dc 'NONE'}} {{settings.second_block_title}} {{else}} {{dc settings.second_block_title_dc}} {{/is}}"
+              class="block-hover-icon" /> {{else}}
+            <i class="{{settings.second_block_font_icon}}"></i>
+            {{/is}}
+
+            <h3 class="blocks-item-title">
+              {{#is settings.second_block_title_dc 'NONE'}} {{settings.second_block_title}} {{else}} {{dc
+              settings.second_block_title_dc}}
+              {{/is}}
+            </h3>
+
+            {{#isnt settings.second_block_description 'NONE'}}
+            <p class="blocks-item-description">
+              {{#is settings.second_block_description_dc 'NONE'}} {{settings.second_block_description}} {{else}} {{dc
+              settings.second_block_description_dc}}
+              {{/is}}
+            </p>
+            {{/isnt}}
+          </a>
+        </li>
+        {{/is}} {{#is settings.third_block_visibility 'show'}}
+        <li class="blocks-item custom">
+          <a href='{{settings.third_block_url}}' class="blocks-item-link" title="{{#is settings.third_block_title_dc 'NONE'}}{{settings.third_block_title}}{{else}}{{dc settings.third_block_title_dc}}{{/is}}">
+
+            {{#is settings.third_block_font_icon 'NONE'}}
+            <img src="{{settings.third_block_icon}}" alt="{{#is settings.third_block_title_dc 'NONE'}} {{settings.third_block_title}} {{else}} {{dc settings.third_block_title_dc}} {{/is}}"
+              class="block-icon" />
+            <img src="{{settings.third_block_hover_icon}}" alt="{{#is settings.third_block_title_dc 'NONE'}} {{settings.third_block_title}} {{else}} {{dc settings.third_block_title_dc}} {{/is}}"
+              class="block-hover-icon" /> {{else}}
+            <i class="{{settings.third_block_font_icon}}"></i>
+            {{/is}}
+
+            <h3 class="blocks-item-title">
+              {{#is settings.third_block_title_dc 'NONE'}} {{settings.third_block_title}} {{else}} {{dc
+              settings.third_block_title_dc}}
+              {{/is}}
+            </h3>
+
+            {{#isnt settings.third_block_description 'NONE'}}
+            <p class="blocks-item-description">
+              {{#is settings.third_block_description_dc 'NONE'}} {{settings.third_block_description}} {{else}} {{dc
+              settings.third_block_description_dc}}
+              {{/is}}
+            </p>
+            {{/isnt}}
+          </a>
+        </li>
+        {{/is}} {{#is settings.fourth_block_visibility 'show'}}
+        <li class="blocks-item custom">
+          <a href='{{settings.fourth_block_url}}' class="blocks-item-link" title="{{#is settings.fourth_block_title_dc 'NONE'}}{{settings.fourth_block_title}}{{else}}{{dc settings.fourth_block_title_dc}}{{/is}}">
+
+            {{#is settings.fourth_block_font_icon 'NONE'}}
+            <img src="{{settings.fourth_block_icon}}" alt="{{#is settings.fourth_block_title_dc 'NONE'}} {{settings.fourth_block_title}} {{else}} {{dc settings.fourth_block_title_dc}} {{/is}}"
+              class="block-icon" />
+            <img src="{{settings.fourth_block_hover_icon}}" alt="{{#is settings.fourth_block_title_dc 'NONE'}} {{settings.fourth_block_title}} {{else}} {{dc settings.fourth_block_title_dc}} {{/is}}"
+              class="block-hover-icon" /> {{else}}
+            <i class="{{settings.fourth_block_font_icon}}"></i>
+            {{/is}}
+
+            <h3 class="blocks-item-title">
+              {{#is settings.fourth_block_title_dc 'NONE'}} {{settings.fourth_block_title}} {{else}} {{dc
+              settings.fourth_block_title_dc}}
+              {{/is}}
+            </h3>
+
+            {{#isnt settings.fourth_block_description 'NONE'}}
+            <p class="blocks-item-description">
+              {{#is settings.fourth_block_description_dc 'NONE'}} {{settings.fourth_block_description}} {{else}} {{dc
+              settings.fourth_block_description_dc}}
+              {{/is}}
+            </p>
+            {{/isnt}}
+          </a>
+        </li>
+        {{/is}} {{#is settings.fifth_block_visibility 'show'}}
+        <li class="blocks-item custom">
+          <a href='{{settings.fifth_block_url}}' class="blocks-item-link" title="{{#is settings.fifth_block_title_dc 'NONE'}}{{settings.fifth_block_title}}{{else}}{{dc settings.fifth_block_title_dc}}{{/is}}">
+
+            {{#is settings.fifth_block_font_icon 'NONE'}}
+            <img src="{{settings.fifth_block_icon}}" alt="{{#is settings.fifth_block_title_dc 'NONE'}} {{settings.fifth_block_title}} {{else}} {{dc settings.fifth_block_title_dc}} {{/is}}"
+              class="block-icon" />
+            <img src="{{settings.fifth_block_hover_icon}}" alt="{{#is settings.fifth_block_title_dc 'NONE'}} {{settings.fifth_block_title}} {{else}} {{dc settings.fifth_block_title_dc}} {{/is}}"
+              class="block-hover-icon" /> {{else}}
+            <i class="{{settings.fifth_block_font_icon}}"></i>
+            {{/is}}
+
+            <h3 class="blocks-item-title">
+              {{#is settings.fifth_block_title_dc 'NONE'}} {{settings.fifth_block_title}} {{else}} {{dc
+              settings.fifth_block_title_dc}}
+              {{/is}}
+            </h3>
+
+            {{#isnt settings.fifth_block_description 'NONE'}}
+            <p class="blocks-item-description">
+              {{#is settings.fifth_block_description_dc 'NONE'}} {{settings.fifth_block_description}} {{else}} {{dc
+              settings.fifth_block_description_dc}}
+              {{/is}}
+            </p>
+            {{/isnt}}
+          </a>
+        </li>
+        {{/is}} {{/is}} {{#is settings.category_block_visibility 'show'}} {{#each categories}} {{#if
+        ../has_multiple_categories}}
+        <li class="blocks-item">
+          <a href='{{url}}' class="blocks-item-link" title="{{name}}">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII="
+              class="{{id}}-block-icon block-icon" alt="{{name}} icon">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII="
+              class="{{id}}-block-hover-icon block-hover-icon" alt="{{name}} hover-icon">
+            <i class="{{id}}-block-font-icon"></i>
+            <script>setIcon({{ id }});</script>
+
+            <h3 class="blocks-item-title">{{name}}</h3>
+            <p class="blocks-item-description">{{excerpt description characters=120}}</p>
+          </a>
+        </li>
+        {{else}} {{#each sections}}
+        <li class="blocks-item {{#if internal}}blocks-item-internal{{/if}}">
+          <a href='{{url}}' class="blocks-item-link" title="{{name}}">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII="
+              class="{{id}}-block-icon block-icon hide" alt="{{name}} icon">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII="
+              class="{{id}}-block-hover-icon block-hover-icon hide" alt="{{name}} hover-icon">
+            <i class="{{id}}-block-font-icon hide"></i>
+            <script>setIcon({{ id }});</script>
+
+            <h3 class="blocks-item-title">
+              {{name}} {{#if internal}}
+              <span class="icon-lock" title="{{t 'internal'}}"></span>
+              {{/if}}
+            </h3>
+
+            <p class="blocks-item-description">{{excerpt description characters=120}}</p>
+          </a>
+        </li>
+        {{/each}} {{/if}} {{/each}} {{/is}}
+
+      </ul>
+      {{#is settings.category_block_visibility 'show'}} {{pagination}} {{/is}}
+    </section>
+  </section>
+  {{!-- knowledge base tree --}}
+
+  {{!-- with commented accordion code --}}
+
+  {{#if settings.show_knowledge_base_tree}}
+  <div class="container">
+    <section class="tree-container">
+      <h1>{{t 'knowledge_base'}}</h1>
+      <ul class="tree-list">
+        {{#each categories}}
+        {{#if ../has_multiple_categories}}
+        {{!-- Add the following class name to the "li" element below, to show the knowledge base in accordion/toggle
+        format : tree-border --}}
+        <li class="tree-items tree-border">
+          {{!-- Add the following class name to the "a" element below, to show the knowledge base in accordion/toggle
+          format : accordion-category-title --}}
+          <a href="{{url}}" title="{{name}}" class="tree-item-link accordion-category-title">
+            <h2 class="tree-item-title">{{name}}</h2>
+            {{!-- uncomment the following lines to show the knowledge base in accordion/toggle format --}}
+             <span class="icons-wrapper">
+              <i class="fas fa-angle-down"></i>
+              <i class="fas fa-angle-up"></i>
+            </span>
+          </a>
+          {{!-- Add the following class name to the "div" element below, to show the knowledge base in accordion/toggle
+          format : hide --}}
+          <div class="section-tree-list hide">
+            {{#each sections}}
+            <section class="section">
+              <h3 class="section-tree-item-title">
+                <a href="{{url}}" title="{{name}}">{{name}}</a>
+                {{#if internal}}
+                <span class="icon-lock" title="{{t 'internal'}}"></span>
+                {{/if}}
+              </h3>
+              {{#if articles}}
+              {{!-- Add the following class name to the "ul" element below, to show the knowledge base in
+              accordion/toggle format : accordion-article-list --}}
+              <ul class="article-list accordion-article-list">
+                {{#each articles}}
+                <li class="article-list-item{{#if promoted}} article-promoted{{/if}}">
+                  {{#if promoted}}
+                  <span data-title="{{t 'promoted'}}" class="icon-star"></span>
+                  {{/if}}
+                  <a href="{{url}}" class="article-list-link" title="{{title}}">{{title}}</a>
+                </li>
+                {{/each}}
+              </ul>
+              {{#if more_articles}}
+              {{!-- Add the following class name to the "a" element below, to show the knowledge base in
+              accordion/toggle format : accordion-see-all-link --}}
+              <a href="{{url}}" class="see-all-articles accordion-see-all-link" title="{{name}}">
+                {{t 'show_all_articles' count=article_count}}
+              </a>
+              {{/if}}
+              {{else}}
+              <i class="section-empty">
+                <a href="{{url}}" title="{{name}}">{{t 'empty'}}</a>
+              </i>
+              {{/if}}
+            </section>
+            {{else}}
+            <i class="category-empty" title="{{name}}">
+              <a href="{{url}}">{{t 'empty'}}</a>
+            </i>
+            {{/each}}
+          </div>
+        </li>
+        {{else}}
+        {{#each sections}}
+        <li class="tree-items">
+          <a href="{{url}}" class="tree-items-link" title="{{name}}">
+            <h3 class="tree-items-title">{{name}}</h3>
+          </a>
+          {{#if articles}}
+          <ul class="section-list">
+            {{#each articles}}
+            <li class="section-item">
+              <a href="{{url}}" class="section-item-link" title="{{title}}">
+                {{title}}
+              </a>
+            </li>
+            {{/each}}
+          </ul>
+          {{/if}}
+        </li>
+        {{/each}}
+        {{/if}}
+        {{/each}}
+      </ul>
+    </section>
+    {{pagination}}
+  </div>
+
+  {{!-- uncomment the below mentioned commented script to show the knowledge base in accordion/toggle format --}}
+  <script>
+    $(".tree-list .tree-items > a").click(function (e) {
+      e.preventDefault();
+      $(this).toggleClass("active");
+      $(this).next().slideToggle(250);
+      $(this).next().css('display', 'flex');
+    });
+  </script>
+  {{/if}}
+
+  {{!-- knowledge base tree ends --}}
+
+
+  <section class="container activities section">
+    {{#if promoted_articles}}
+    <section class="articles section">
+      <h2>{{t 'promoted_articles'}}</h2>
+      <ul class="article-list promoted-articles">
+        {{#each promoted_articles}}
+        <li class="promoted-articles-item">
+          <a href="{{url}}">
+            {{title}}
+          </a>
+        </li>
+        {{/each}}
+      </ul>
+    </section>
+    {{/if}}
+
+{{!-- 
+  <section class="section activity">
+    {{recent_activity}}
+  </section>
+--}}
+</div>

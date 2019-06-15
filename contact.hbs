@@ -1,0 +1,56 @@
+<!-- Start of LiveChat (www.livechatinc.com) code -->
+<script type="text/javascript">
+window.__lc = window.__lc || {};
+window.__lc.license = 7131401;
+(function() {
+  var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+  lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+})();
+</script>
+<!-- End of LiveChat code -->
+
+<div class="container-divider"></div>
+<div class="container">
+  <nav class="sub-nav">
+    {{breadcrumbs}}
+    {{search submit=false}}
+  </nav>
+<div class="contact-container">
+    <h1>Contact Us</h1>
+  <p>We're here to help 7 days a week!</p>
+  <p>Sunday - Thursday: 8 AM to 9 PM Central Time
+<br>Friday: 8 AM to 7 PM Central Time
+<br>Saturday: 10 AM to 7 PM Central Time</p>
+  <p>&nbsp;</p>
+<div class="contact-buttons">
+        <a href="https://lc.chat/now/7131401/10" onclick="LC_API.open_chat_window();return false;" class="contact-btn">Chat With Us</a>
+    		<a id="email-btn" class="contact-btn">Email Us</a>
+        <a href="tel:8556371886" class="contact-btn">Call Us at 855-637-1886</a>
+  </div>
+  </div>
+  <div class="contact-form">
+  {{!--<h1>
+    {{t 'submit_a_request'}}
+    {{#if follow_up}}
+      <span class="follow-up-hint">
+        {{follow_up}}
+      </span>
+    {{/if}}
+  </h1>--}}
+  <h1>How can we help you?</h1>
+  <div class="form">
+    {{request_form}}
+  </div>
+  </div>
+
+</div>
+
+<script>
+$(document).ready(function () {
+    $("#email-btn").on("click", function(){
+			$(".contact-form").fadeToggle();
+		});
+
+});
+</script>
