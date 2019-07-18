@@ -1,0 +1,869 @@
+{
+  "name": "PasterIDS",
+  "author": "WyrdWeb Workshop",
+  "version": "1.2.0",
+  "api_version": 2,
+  "default_locale": "en-us",
+  "settings": [
+    {
+    "label": "colors_group_label",
+      "variables": [{
+        {
+          "identifier": "brand_color",
+          "type": "color",
+          "description": "Icons, boxes on the homepage, buttons. CSS ref: color_1",
+          "label": "brand_color_label",
+          "value": "#0ba8cf"
+        },
+        {
+          "identifier": "color_2",
+          "type": "color",
+          "description": "The color of hover and active states for elements on top of the brand color. CSS ref: color_2",
+          "label": "brand_text_color",
+          "value": "#ffffff"
+        },
+        {
+      {
+        "identifier": "color_3",
+        "type": "color",
+        "description": "Plain ol' page header and body text color. CSS ref: color_3",
+        "label": "text_color",
+        "value": "#313131"
+      },
+      {
+        "identifier": "color_4",
+        "type": "color",
+        "description": "Body and header text link color. CSS ref: color_4",
+        "label": "link_color",
+        "value": "#00799e"
+      },
+      {
+        "identifier": "color_5",
+        "type": "color",
+        "description": "Background color - Color of the page background. CSS ref: color_5",
+        "label": "background_color",
+        "value": "#f3f3f3"
+      },
+        {
+          "identifier": "color_6",
+          "type": "color",
+          "description": "Dark tone for fonts, backdrops, etc. CSS ref: color_6",
+          "label": "dark_tone",
+          "value": "#313131"
+        },
+        {
+          "identifier": "color_7",
+          "type": "color",
+          "description": "A grey tone. Feel free to replace this. Referenced in styles as color_7",
+          "label": "grey_tone",
+          "value": "#808184"
+        },
+        {
+          "identifier": "header_background_color",
+        "type": "color",
+        "description": "The color for the header background",
+        "label": "header_background_color_label",
+        "value": "#ffffff"
+      },
+      {
+        "identifier": "header_text_color",
+        "type": "color",
+        "description": "The color of the header text",
+        "label": "header_text_color_label",
+        "value": "#313131"
+      },
+        {
+          "identifier": "footer_background_color",
+          "type": "color",
+          "description": "The background color of the footer",
+          "label": "footer_background_color_label",
+          "value": "#2b363c"
+        },
+        {
+          "identifier": "footer_text_color",
+          "type": "color",
+          "description": "Text color for footer elements",
+          "label": "footer_text_color_label",
+          "value": "#FFFFFF"
+        }
+    ]
+  },
+  {
+        {
+      ]
+    },
+    {
+      "identifier": "font_1",
+      "type": "list",
+      "description": "Header font",
+      "label": "Heading",
+      "value": "-apple-system, BlinkMacSystemFont, 'SohoStd-Regular', 'Oxygen', 'Segoe UI', serif",
+      "options": [
+        {
+          "label": "System",
+          "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+        },
+        {
+          "label": "Soho",
+          "value": "'SohoStd-Regular', 'Arial Black', Georgia, serif"
+        },
+        {
+          "label": "Oxygen",
+          "value": "'Oxygen', Arial, 'Helvetica Neue', Helvetica, sans-serif"
+        },
+        {
+          "label": "Arial",
+          "value": "'Oxygen', Arial, 'Helvetica Neue', Helvetica, sans-serif"
+        },
+        {
+          "label": "Arial Black",
+          "value": "'SohoStd-Regular', 'Arial Black', Arial, 'Helvetica Neue', Helvetica, sans-serif"
+        },
+        {
+          "label": "Baskerville",
+          "value": "Baskerville, 'Times New Roman', Times, serif"
+        },
+        {
+          "label": "Century Gothic",
+          "value": "'Century Gothic', AppleGothic, sans-serif"
+        },
+        {
+          "label": "Copperplate Light",
+          "value": "'Copperplate Light', 'Copperplate Gothic Light', serif"
+        },
+        {
+          "label": "Courier New",
+          "value": "'Courier New', Courier, monospace"
+        },
+        {
+          "label": "Futura",
+          "value": "Futura, 'Oxygen', 'Century Gothic', AppleGothic, sans-serif"
+        },
+        {
+          "label": "Garamond",
+          "value": "Garamond, 'Hoefler Text', Times New Roman, Times, serif"
+        },
+        {
+          "label": "Geneva",
+          "value": "Geneva, 'Oxygen', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif"
+        },
+        {
+          "label": "Georgia",
+          "value": "Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif"
+        },
+        {
+          "label": "Helvetica",
+          "value": "Helvetica, 'Oxygen', Arial, sans-serif"
+        },
+        {
+          "label": "Helvetica Neue",
+          "value": "'Helvetica Neue', 'Oxygen', Arial, Helvetica, sans-serif"
+        },
+        {
+          "label": "Impact",
+          "value": "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"
+        },
+        {
+          "label": "Lucida Grande",
+          "value": "'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', sans-serif"
+        },
+        {
+          "label": "Trebuchet MS",
+          "value": "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"
+        }
+      ]
+    },
+    {    "identifier": "heading_font",
+          "type": "list",
+          "description": "heading_font_description",
+          "label": "heading_font_label",
+          "value": "-apple-system, BlinkMacSystemFont, 'SohoStd-Regular', 'Oxygen', 'Segoe UI', serif",
+          "options": [
+            {
+              "label": "System",
+              "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+            },
+            {
+              "label": "Soho",
+              "value": "'SohoStd-Regular', 'Arial Black', Georgia, serif"
+            },
+            {
+              "label": "Oxygen",
+              "value": "'Oxygen', Arial, 'Helvetica Neue', Helvetica, sans-serif"
+            },
+            {
+              "label": "Arial",
+              "value": "'Oxygen', Arial, 'Helvetica Neue', Helvetica, sans-serif"
+            },
+            {
+              "label": "Arial Black",
+              "value": "'SohoStd-Regular', 'Arial Black', Arial, 'Helvetica Neue', Helvetica, sans-serif"
+            },
+            {
+              "label": "Baskerville",
+              "value": "Baskerville, 'Times New Roman', Times, serif"
+            },
+            {
+              "label": "Century Gothic",
+              "value": "'Century Gothic', AppleGothic, sans-serif"
+            },
+            {
+              "label": "Copperplate Light",
+              "value": "'Copperplate Light', 'Copperplate Gothic Light', serif"
+            },
+            {
+              "label": "Courier New",
+              "value": "'Courier New', Courier, monospace"
+            },
+            {
+              "label": "Futura",
+              "value": "Futura, 'Oxygen', 'Century Gothic', AppleGothic, sans-serif"
+            },
+            {
+              "label": "Garamond",
+              "value": "Garamond, 'Hoefler Text', Times New Roman, Times, serif"
+            },
+            {
+              "label": "Geneva",
+              "value": "Geneva, 'Oxygen', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif"
+            },
+            {
+              "label": "Georgia",
+              "value": "Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif"
+            },
+            {
+              "label": "Helvetica",
+              "value": "Helvetica, 'Oxygen', Arial, sans-serif"
+            },
+            {
+              "label": "Helvetica Neue",
+              "value": "'Helvetica Neue', 'Oxygen', Arial, Helvetica, sans-serif"
+            },
+            {
+              "label": "Impact",
+              "value": "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"
+            },
+            {
+              "label": "Lucida Grande",
+              "value": "'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', sans-serif"
+            },
+            {
+              "label": "Trebuchet MS",
+              "value": "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"
+            }
+            ]
+        },
+        {
+            "identifier": "font_2",
+            "type": "list",
+            "description": "Font for body text",
+            "label": "Text",
+            "value": "'Oxygen', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif",
+            "options": [
+              {
+                "label": "System",
+                "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+              },
+              {
+                "label": "Arial",
+                "value": "'Oxygen', Arial, 'Helvetica Neue', Helvetica, sans-serif"
+              },
+              {
+              "label": "Soho",
+              "value": "'SohoStd-Regular', 'Arial Black', 'Oxygen', Helvetica, Arial, sans-serif"
+            },
+            {
+                "label": "Arial Black",
+                "value": "'Arial Black', Arial, 'Helvetica Neue', Helvetica, sans-serif"
+              },
+              {
+                "label": "Baskerville",
+                "value": "Baskerville, 'Times New Roman', Times, serif"
+              },
+              {
+                "label": "Century Gothic",
+                "value": "'Century Gothic', AppleGothic, sans-serif"
+              },
+              {
+                "label": "Copperplate Light",
+                "value": "'Copperplate Light', 'Copperplate Gothic Light', serif"
+              },
+              {
+                "label": "Courier New",
+                "value": "'Courier New', Courier, monospace"
+              },
+              {
+                "label": "Futura",
+                "value": "'Oxygen', Futura, 'Century Gothic', AppleGothic, sans-serif"
+              },
+              {
+                "label": "Garamond",
+                "value": "Garamond, 'Hoefler Text', Times New Roman, Times, serif"
+              },
+              {
+                "label": "Geneva",
+                "value": "'Oxygen', Geneva, 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif"
+              },
+              {
+                "label": "Georgia",
+                "value": "Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif"
+              },
+              {
+                "label": "Helvetica",
+                "value": "'Oxygen', Helvetica, Arial, sans-serif"
+              },
+              {
+                "label": "Helvetica Neue",
+                "value": "'Oxygen', 'Helvetica Neue', Arial, Helvetica, sans-serif"
+              },
+              {
+                "label": "Impact",
+                "value": "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"
+              },
+              {
+                "label": "Lucida Grande",
+                "value": "'Oxygen', 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', sans-serif"
+              },
+              {
+                "label": "Trebuchet MS",
+                "value": "'Oxygen', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"
+              }
+            ]
+          }
+        ]
+      },
+      {
+      "label": "brand_group_label",
+      "variables": [{
+          "identifier": "logo",
+          "type": "file",
+          "description": "logo_description",
+          "label": "logo_label"
+        },
+        {
+          "identifier": "favicon",
+          "type": "file",
+          "description": "favicon_description",
+          "label": "favicon_label"
+        }
+      ]
+    },
+    {
+      "label": "images_group_label",
+      "variables": [{
+          "identifier": "homepage_background_image",
+          "type": "file",
+          "description": "homepage_background_image_description",
+          "label": "homepage_background_image_label"
+        },
+        {
+          "identifier": "community_background_image",
+          "type": "file",
+          "description": "community_background_image_description",
+          "label": "community_background_image_label"
+        },
+        {
+          "identifier": "community_image",
+          "type": "file",
+          "description": "community_image_description",
+          "label": "community_image_label"
+        },
+        {
+          "identifier": "error_image",
+          "type": "file",
+          "description": "error_image_description",
+          "label": "error_image_label"
+        }
+      ]
+    },
+    {
+      "label": "placeholder_group_label",
+      "variables": [{
+          "identifier": "search_placeholder_text",
+          "label": "search_placeholder_text_label",
+          "description": "search_placeholder_text_description",
+          "type": "text",
+          "value": "Search"
+        },
+        {
+          "identifier": "search_placeholder_text_dc",
+          "label": "search_placeholder_text_dc_label",
+          "description": "search_placeholder_text_dc_description",
+          "type": "text",
+          "value": "NONE"
+        }
+      ]
+    },
+    {
+      "label": "homepage_blocks_group_label",
+      "variables": [{
+          "identifier": "category_block_visibility",
+          "type": "list",
+          "description": "category_block_visibility_description",
+          "label": "category_block_visibility_label",
+          "value": "hide",
+          "options": [{
+              "label": "show",
+              "value": "show"
+            },
+            {
+              "label": "hide",
+              "value": "hide"
+            }
+          ]
+        },
+        {
+          "identifier": "custom_block_visibility",
+          "type": "list",
+          "description": "custom_block_visibility_description",
+          "label": "custom_block_visibility_label",
+          "value": "show",
+          "options": [{
+              "label": "show",
+              "value": "show"
+            },
+            {
+              "label": "hide",
+              "value": "hide"
+            }
+          ]
+        },
+        {
+          "identifier": "show_knowledge_base_tree",
+          "type": "checkbox",
+          "description": "knowledge_base_visibility_description",
+          "label": "knowledge_base_visibility_label",
+          "value": false
+        }
+      ]
+    },
+    {
+      "label": "first_block_group_label",
+      "variables": [{
+          "identifier": "first_block_visibility",
+          "type": "list",
+          "description": "block_visibility_description",
+          "label": "block_visibility_label",
+          "value": "show",
+          "options": [{
+              "label": "show",
+              "value": "show"
+            },
+            {
+              "label": "hide",
+              "value": "hide"
+            }
+          ]
+        },
+        {
+          "identifier": "first_block_icon",
+          "type": "file",
+          "description": "block_icon_description",
+          "label": "block_icon_label"
+        },
+        {
+          "identifier": "first_block_hover_icon",
+          "type": "file",
+          "description": "block_hover_icon_description",
+          "label": "block_hover_icon_label"
+        },
+        {
+          "identifier": "first_block_font_icon",
+          "type": "text",
+          "description": "block_font_icon_description",
+          "label": "block_font_icon_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "first_block_title",
+          "type": "text",
+          "description": "block_title_description",
+          "label": "block_title_label",
+          "value": "Getting Started"
+        },
+        {
+          "identifier": "first_block_title_dc",
+          "type": "text",
+          "description": "block_title_dc_description",
+          "label": "block_title_dc_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "first_block_url",
+          "type": "text",
+          "description": "block_url_description",
+          "label": "block_url_label",
+          "value": "#"
+        }
+      ]
+    },
+    {
+      "label": "second_block_group_label",
+      "variables": [{
+          "identifier": "second_block_visibility",
+          "type": "list",
+          "description": "block_visibility_description",
+          "label": "block_visibility_label",
+          "value": "show",
+          "options": [{
+              "label": "show",
+              "value": "show"
+            },
+            {
+              "label": "hide",
+              "value": "hide"
+            }
+          ]
+        },
+        {
+          "identifier": "second_block_icon",
+          "type": "file",
+          "description": "block_icon_description",
+          "label": "block_icon_label"
+        },
+        {
+          "identifier": "second_block_hover_icon",
+          "type": "file",
+          "description": "block_hover_icon_description",
+          "label": "block_hover_icon_label"
+        },
+        {
+          "identifier": "second_block_font_icon",
+          "type": "text",
+          "description": "block_font_icon_description",
+          "label": "block_font_icon_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "second_block_title",
+          "type": "text",
+          "description": "block_title_description",
+          "label": "block_title_label",
+          "value": "How to create new account"
+        },
+        {
+          "identifier": "second_block_title_dc",
+          "type": "text",
+          "description": "block_title_dc_description",
+          "label": "block_title_dc_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "second_block_url",
+          "type": "text",
+          "description": "block_url_description",
+          "label": "block_url_label",
+          "value": "#"
+        }
+      ]
+    },
+    {
+      "label": "third_block_group_label",
+      "variables": [{
+          "identifier": "third_block_visibility",
+          "type": "list",
+          "description": "block_visibility_description",
+          "label": "block_visibility_label",
+          "value": "show",
+          "options": [{
+              "label": "show",
+              "value": "show"
+            },
+            {
+              "label": "hide",
+              "value": "hide"
+            }
+          ]
+        },
+        {
+          "identifier": "third_block_icon",
+          "type": "file",
+          "description": "block_icon_description",
+          "label": "block_icon_label"
+        },
+        {
+          "identifier": "third_block_hover_icon",
+          "type": "file",
+          "description": "block_hover_icon_description",
+          "label": "block_hover_icon_label"
+        },
+        {
+          "identifier": "third_block_font_icon",
+          "type": "text",
+          "description": "block_font_icon_description",
+          "label": "block_font_icon_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "third_block_title",
+          "type": "text",
+          "description": "block_title_description",
+          "label": "block_title_label",
+          "value": "How to access your account"
+        },
+        {
+          "identifier": "third_block_title_dc",
+          "type": "text",
+          "description": "block_title_dc_description",
+          "label": "block_title_dc_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "third_block_url",
+          "type": "text",
+          "description": "block_url_description",
+          "label": "block_url_label",
+          "value": "#"
+        }
+      ]
+    },
+    {
+      "label": "fourth_block_group_label",
+      "variables": [{
+          "identifier": "fourth_block_visibility",
+          "type": "list",
+          "description": "block_visibility_description",
+          "label": "block_visibility_label",
+          "value": "show",
+          "options": [{
+              "label": "show",
+              "value": "show"
+            },
+            {
+              "label": "hide",
+              "value": "hide"
+            }
+          ]
+        },
+        {
+          "identifier": "fourth_block_icon",
+          "type": "file",
+          "description": "block_icon_description",
+          "label": "block_icon_label"
+        },
+        {
+          "identifier": "fourth_block_hover_icon",
+          "type": "file",
+          "description": "block_hover_icon_description",
+          "label": "block_hover_icon_label"
+        },
+        {
+          "identifier": "fourth_block_font_icon",
+          "type": "text",
+          "description": "block_font_icon_description",
+          "label": "block_font_icon_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "fourth_block_title",
+          "type": "text",
+          "description": "block_title_description",
+          "label": "block_title_label",
+          "value": "Managing your account"
+        },
+        {
+          "identifier": "fourth_block_title_dc",
+          "type": "text",
+          "description": "block_title_dc_description",
+          "label": "block_title_dc_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "fourth_block_url",
+          "type": "text",
+          "description": "block_url_description",
+          "label": "block_url_label",
+          "value": "#"
+        }
+      ]
+    },
+    {
+      "label": "fifth_block_group_label",
+      "variables": [{
+          "identifier": "fifth_block_visibility",
+          "type": "list",
+          "description": "block_visibility_description",
+          "label": "block_visibility_label",
+          "value": "show",
+          "options": [{
+              "label": "show",
+              "value": "show"
+            },
+            {
+              "label": "hide",
+              "value": "hide"
+            }
+          ]
+        },
+        {
+          "identifier": "fifth_block_icon",
+          "type": "file",
+          "description": "block_icon_description",
+          "label": "block_icon_label"
+        },
+        {
+          "identifier": "fifth_block_hover_icon",
+          "type": "file",
+          "description": "block_hover_icon_description",
+          "label": "block_hover_icon_label"
+        },
+        {
+          "identifier": "fifth_block_font_icon",
+          "type": "text",
+          "description": "block_font_icon_description",
+          "label": "block_font_icon_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "fifth_block_title",
+          "type": "text",
+          "description": "block_title_description",
+          "label": "block_title_label",
+          "value": "Find tutorials"
+        },
+        {
+          "identifier": "fifth_block_title_dc",
+          "type": "text",
+          "description": "block_title_dc_description",
+          "label": "block_title_dc_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "fifth_block_url",
+          "type": "text",
+          "description": "block_url_description",
+          "label": "block_url_label",
+          "value": "#"
+        }
+      ]
+    },
+    {
+      "label": "article_template_group_label",
+      "variables": [{
+          "identifier": "comment_block_visibility",
+          "type": "list",
+          "description": "block_visibility_description",
+          "label": "comment_block_visibility_label",
+          "value": "show",
+          "options": [{
+              "label": "show",
+              "value": "show"
+            },
+            {
+              "label": "hide",
+              "value": "hide"
+            }
+          ]
+        },
+        {
+          "identifier": "sidebar_block_visibility",
+          "type": "list",
+          "description": "block_visibility_description",
+          "label": "sidebar_block_visibility_label",
+          "value": "show",
+          "options": [{
+              "label": "show",
+              "value": "show"
+            },
+            {
+              "label": "hide",
+              "value": "hide"
+            }
+          ]
+        },
+        {
+          "identifier": "meta_block_visibility",
+          "type": "list",
+          "description": "block_visibility_description",
+          "label": "meta_block_visibility_label",
+          "value": "show",
+          "options": [{
+              "label": "show",
+              "value": "show"
+            },
+            {
+              "label": "hide",
+              "value": "hide"
+            }
+          ]
+        },
+        {
+          "identifier": "article_share_block_visibility",
+          "type": "list",
+          "description": "block_visibility_description",
+          "label": "article_share_block_visibility_label",
+          "value": "show",
+          "options": [{
+              "label": "show",
+              "value": "show"
+            },
+            {
+              "label": "hide",
+              "value": "hide"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "social_media_group",
+      "variables": [{
+          "identifier": "google_plus_link",
+          "type": "text",
+          "description": "googleplus_link_description",
+          "label": "googleplus_link_label",
+          "value": "#"
+        },
+        {
+          "identifier": "twitter_link",
+          "type": "text",
+          "description": "twitter_link_description",
+          "label": "twitter_link_label",
+          "value": "#"
+        },
+        {
+          "identifier": "facebook_link",
+          "type": "text",
+          "description": "facebook_link_description",
+          "label": "facebook_link_label",
+          "value": "#"
+        },
+        {
+          "identifier": "youtube_link",
+          "type": "text",
+          "description": "youtube_link_description",
+          "label": "youtube_link_label",
+          "value": "#"
+        },
+        {
+          "identifier": "linkedin_link",
+          "type": "text",
+          "description": "linkedin_link_description",
+          "label": "linkedin_link_label",
+          "value": "#"
+        },
+        {
+          "identifier": "pinterest_link",
+          "type": "text",
+          "description": "pinterest_link_description",
+          "label": "pinterest_link_label",
+          "value": "#"
+        },
+        {
+          "identifier": "instagram_link",
+          "type": "text",
+          "description": "instagram_link_description",
+          "label": "instagram_link_label",
+          "value": "#"
+        },
+        {
+          "identifier": "email",
+          "type": "text",
+          "description": "email_link_description",
+          "label": "email_link_label",
+          "value": "#"
+        }
+      ]
+    }
+  ]
+}

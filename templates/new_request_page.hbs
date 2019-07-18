@@ -1,0 +1,108 @@
+  <section class="section hero">
+    <div class="hero-inner">
+      <h2>To begin a Search, please select your State of Residence</h2>
+      <div class="globalsearch">
+          {{search submit=false instant=false autocomplete=false class='search search-full' placeholder='Search Help Center'}}
+      </div>
+      <div class="error">Please select your state</div>
+    </div>
+	</section>
+
+  <div class="wrap">
+    <nav class="sub-nav">
+      {{breadcrumbs}}
+    </nav>
+
+    <h1>Contact Us</h1>
+
+    <div class="contact-container">
+      <div class="contact-containerer">
+      <div class="box box1">
+        <p><strong>We're here to help, 7 days a week!</strong></p>
+        <ul>
+          <li>Sunday - Thursday: 8 AM to 9 PM Central Time</li>
+          <li>Friday: 8 AM to 7 PM Central Time</li>
+          <li>Saturday: 10 AM to 7 PM Central Time</li>
+        </ul>
+      </div>
+      <div class="box box2">
+          <button class="q">The video I'm watching has stopped moving. What do I do?</button>
+          <div class="a"><p>If the video you’re watching has frozen, you can clear your cache/temporary internet files on your internet browser. This should allow the video to play properly .</p></div>
+          <button class="q">I can't see a hyperlink or view a video in my course</button>
+          <div class="a"><p>If you’re unable to view a hyperlink or video while taking your course, you can fix the problem by reinstalling your Adobe Flash player. You should then be able to continue in the course. <a href="https://get.adobe.com/flashplayer/" target="_blank">Click Here</a> to get Adobe Flash Player!</p></div>
+          <button class="q">Do I need any special software to take this course?</button>
+          <div class="a"><p>You do not need any special software to use our course. All you need is a web browser and a connection to the internet. Below is a list of recommend devices and browsers.</p>
+          <p>Desktop (Windows/Mac OS) – we support Internet Explorer 10.0 and higher, Mozilla Firefox, Safari and most other browsers. Some courses use the Adobe Flash plug-in. This product is free and can be downloaded and installed at registration.</p>
+          <p>Tablet &amp; Smart Phones – we support all the recent devices purchased in last 3-4 years with decent internet data connection.</p>
+          <p>Note: Few of our courses don’t works on tablet &amp; phones, whose browser doesn’t have adobe flash plug-in.</p></div>
+          <button class="q">The pages on your site are not loading</button>
+          <div class="a"><p>If the pages for our site are not loading completely, you may want to disconnect your internet connection and log back in. This type of problem is typically caused by your Internet Service Provider or ISP and web traffic. If you continue to experience problems, we recommend disconnecting and returning at a later time.</p></div>
+          <button class="q">The system is not allowing me to log in</button>
+          <div class="a"><p>To access your course:</p>
+          <p>Confirm the email address used for course registration. This can be done by checking your email for emails received from I Drive Safely.</p>
+          <p>If the email address is correct you will need to reset your password by accessing the Reset Password Page, <a href="https://www.idrivesafely.com/forgot-password/">here</a>. Provide your email address and you will receive an email with direction to reset your password.</p></div>
+      </div>
+      </div>
+<!-- contact icons -->
+      <div class="contact-buttons">
+        <a id="chatBtn" href="javascript:$zopim.livechat.window.show();"><button class="contact-btn button">Chat With Us</button></a>
+        <a id="emailBtn"><button class="contact-btn button">Email Us</button></a>
+        <a id="callBtn"><button class="contact-btn button">Call Us at 855-637-1886</button></a>
+        <p>For the Hearing Impaired:<br />(800) 735-2929</p>
+      </div>
+    </div><!-- contact-container -->
+
+    <div id="contactForm" class="contact-form">
+      {{!--<h1>
+        {{t 'submit_a_request'}}
+        {{#if follow_up}}
+          <span class="follow-up-hint">
+            {{follow_up}}
+          </span>
+        {{/if}}
+      </h1>--}}
+      <div class="contact">
+          <span class="close">&times;</span>
+          <h1>How can we help you?</h1>
+          <div class="form">
+              {{request_form}}
+          </div>
+      </div>
+    </div><!-- contact form -->
+
+	</div><!-- wrap -->
+
+<script>
+var acc = document.getElementsByClassName("q");
+var i;
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var a = this.nextElementSibling;
+    if (a.style.maxHeight){
+      a.style.maxHeight = null;
+    } else {
+      a.style.maxHeight = a.scrollHeight + "px";
+    }
+  });
+}
+</script>
+<script>
+ $(document).ready(function () {
+var modal = document.getElementById("contactForm");
+var btn = document.getElementById("emailBtn");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+});
+</script>

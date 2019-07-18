@@ -1,0 +1,128 @@
+<section class="section hero">
+  <div class="hero-inner">
+    <h1>I Drive Safely is Here to Help</h1>
+    <h2>To begin a Search, please select your State of Residence</h2>
+    <div class="globalsearch">
+      	{{search submit=false instant=false autocomplete=false class='search search-full' placeholder='Search Help Center'}}
+    </div>
+  </div>
+</section>
+
+<div class="container-divider"></div>
+<div class="container">
+
+      <div class="feature-blocks" id="feature-main">
+          <ul class="feature-blocks-content clearfix">
+              <li>
+                 <a class="hvr-bob" href="/hc/en-us/sections/360004305313">
+                  <i class="fas fa-file-alt" aria-hidden="true"></i>
+                      <h4>Course Information</h4>
+                      <span>Course Details, Approval and Eligibility and More.</span>
+                  </a>
+              </li>
+              <li>
+                 <a class="hvr-bob" href="/hc/en-us/categories/360004305273">
+                  <i class="far fa-user-circle" aria-hidden="true"></i>
+                      <h4>Technical Information</h4>
+                      <span>Your Account related, Troubleshooting and More.</span>
+                  </a>
+              </li>
+              <li>
+                  <a class="hvr-bob" href="/hc/en-us/sections/360004705193">
+                    <i class="fas fa-credit-card" aria-hidden="true"></i>
+                      <h4>Billing Questions</h4>
+                      <span>Payment related, Cancellation and More.</span>
+                  </a>
+              </li>
+          </ul><!-- feature-blocks-content -->
+      </div><!-- feature-blocks -->
+
+      <div class="ids-help-faq-default">
+    	<div class="wrap">
+                <div class="one-half first">
+                <h3>Frequently Asked Questions</h3>
+
+                    {{#each categories}}
+                    {{#is id 360001820793}} <!-- General -->
+                    {{#each sections}}
+                    {{#is id 360004305093}} <!-- within General, FAQ -->
+                        {{#each articles}}
+
+            <!-- question -->
+                            <button class="faqblock">
+                                {{title}}
+                                {{#if internal}}
+                                <span class="icon-lock" title="{{t 'internal'}}"></span>
+                                {{/if}}
+                            </button>
+
+            <!-- answer -->
+                            <div class="faqpanel">
+                                <p>
+                                    {{excerpt body characters=200}}
+                                  	<br />
+                                   	<a href="{{url}}">Read more...</a>
+                                </p>
+                            </div>
+                
+                        {{/each}}
+                     {{/is}}
+                   {{/each}}
+                {{/is}}
+              {{/each}}
+
+            </div><!-- one-half-common-->
+            <div class="one-half common">
+
+            {{#if promoted_articles}}
+                <h3>Popular Q's</h3>
+
+                {{#each promoted_articles}}
+                
+                    <!-- question -->
+                                <button class="faqblock">
+                                    {{title}}
+                                        {{#if internal}}
+                                            <span class="icon-lock" title="{{t 'internal'}}"></span>
+                                        {{/if}}
+                                </button>
+                        
+                    <!-- answer -->
+                                <div class="faqpanel">
+                                    <p>
+                                        {{excerpt body characters=200}}
+                                        <br />
+                                        <a href="{{url}}">Read more...</a>
+                                    </p>
+                                </div>
+
+                            {{/each}}
+
+                        {{!-- pagination --}}
+                    {{/if}}
+                </div><!-- one half common -->
+            </div><!-- wrap -->
+         </div><!-- ids-help-faq-default -->
+
+    <section class="section activity">
+        {{recent_activity}}
+    </section> 
+
+</div><!-- container -->
+
+<script>
+var acc = document.getElementsByClassName("faqblock");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var faqpanel = this.nextElementSibling;
+    if (faqpanel.style.maxHeight){
+      faqpanel.style.maxHeight = null;
+    } else {
+      faqpanel.style.maxHeight = faqpanel.scrollHeight + "px";
+    }
+  });
+}
+</script>
